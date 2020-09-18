@@ -19,3 +19,4 @@ spec:
           name: django-app
           ports:
           - containerPort: 8000
+          
