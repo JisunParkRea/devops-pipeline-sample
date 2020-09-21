@@ -9,13 +9,13 @@ spec:
   selector:
     matchLabels:
       app: kube-django-deployment
-    template:
-      metadata:
-        labels:
-          app: kube-django-deployment
-      spec:
-        containers:
-        - image: jisunpark/django-sample
-          name: django-app
-          ports:
-          - containerPort: 8000
+  template:
+    metadata:
+      labels:
+        app: kube-django-deployment
+    spec:
+      containers:
+      - image: jisunpark/django-sample
+        name: django-app
+        ports:
+        - containerPort: 8000
